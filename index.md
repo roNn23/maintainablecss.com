@@ -8,78 +8,78 @@ id: home
 	<img class="hero-logo" src="/assets/img/logo.png" width="250" height="250">
 
 	<h1>MaintainableCSS</h1>
-	<p>Write CSS without worrying that overzealous, pre-existing styles will cause problems. <em>MaintainableCSS</em> is an approach to writing <em>modular</em>, <em>scalable</em> and of course, <em>maintainable</em> CSS.</p>
-	<a class="hero-button" href="/chapters/introduction/">Read now</a>
+	<p>Schreibe ohne Sorge, dass bereits vorhandene CSS-Styles Probleme verursachen. <em>MaintainableCSS</em> ist ein Ansatz um <em>modularen</em>, <em>skalierbaren</em> und natürlich <em>wartbaren</em> CSS-Code zu schreiben.</p>
+	<a class="hero-button" href="/chapters/introduction/">Jetzt lesen</a>
 </div>
 <!--
-	<h2>Maintainable &mdash; Adjective</h2>
-	<p>Keep in good condition. Keep at the same level.</p>
+	<h2>Wartung &mdash; Adjektiv</h2>
+	<p>In guter Verfassung halten. Auf gleichem Stand halten.</p>
 -->
 
 <div class="benefits">
-	<h2>Benefits of MaintainableCSS</h2>
+	<h2>Vorteile von MaintainableCSS</h2>
 	<div class="benefits-wrapper">
 		<div class="benefit">
-			<h3>Modular and encapsulated</h3>
-			<p>Styles don't bleed or cascade without your permission.</p>
+			<h3>Modular und gekapselt</h3>
+			<p>CSS-Styles beeinflussen sich nicht gegenseitig, ohne dass du das willst.</p>
 		</div>
 		<div class="benefit">
-			<h3>Any design requirements</h3>
-			<p>Completely flexible to your needs.</p>
+			<h3>Für jede Designanforderung</h3>
+			<p>Komplett flexibel für jeden Gebrauchsfall.</p>
 		</div>
 		<div class="benefit">
-			<h3>No tooling required</h3>
-			<p>But you can use tooling if you want to.</p>
+			<h3>Keine besonderen Werkzeuge benötigt</h3>
+			<p>Du kannst aber Alles benutzen, wenn du magst.</p>
 		</div>
 		<div class="benefit">
-			<h3>Easy to learn</h3>
-			<p>Read the guides and see.</p>
+			<h3>Einfach zu lernen</h3>
+			<p>Lese einfach das Handbuch und schau selbst.</p>
 		</div>
 		<div class="benefit">
-			<h3>Any size project</h3>
-			<p>Whatever size project you have, <em>MaintainableCSS</em> will help.</p>
+			<h3>Für jede Projekgröße</h3>
+			<p>Egal welche Größe dein Projekt hat, <em>MaintainableCSS</em> bringt dich voran.</p>
 		</div>
 		<div class="benefit">
-			<h3>Upgrade in your own time</h3>
-			<p>You can start applying the approach today, bit by bit. You don't need to upgrade the whole project in one go.</p>
+			<h3>Benutze es wann du willst</h3>
+			<p>Du kannst den Ansatz direkt heute verwenden, Stück für Stück. Man muss nicht das ganze Projekt auf einmal umzustellen.</p>
 		</div>
 		<div class="benefit">
-			<h3>No problems of specificity</h3>
-			<p>Avoid problems of specificity and override hell. Write CSS as if you always have a blank canvas.</p>
+			<h3>Keine Spezifitäts-Probleme mehr</h3>
+			<p>Verhindere Probleme mit der CSS-Spezifität und vermeide die "Override hell". Schreibe CSS als ob du auf grüner Wiese beginnst.</p>
 		</div>
 		<div class="benefit">
-			<h3>Managing state is easy</h3>
-			<p>Change the look and feel based on states such as <em>loading</em>, <em>disabled</em> and <em>hiding</em>.</p>
+			<h3>Einfaches Status-Management</h3>
+			<p>Ändere das Aussehen nach verschieden Zuständen von Elementen wie beispielsweise <em>gerade ladend</em>, <em>deaktiviert</em> oder <em>versteckt</em>.</p>
 		</div>
 		<div class="benefit">
-			<h3>No worry of regression</h3>
-			<p>When you change existing styles, have no fear that you might have caused regression elsewhere.</p>
+			<h3>Sorge dich nicht mehr über Regression</h3>
+			<p>Schreibe an bestehendem CSS ohne Angst zu haben, irgendwoanders etwas kaputt zu machen.</p>
 		</div>
 		<div class="benefit">
-			<h3>Any team size</h3>
-			<p>Useful in a team of one or in a team of 100.</p>
+			<h3>Für jede Teamgröße</h3>
+			<p>Anwendbar für eine One-Man-Show oder eine ganze Armee von Entwicklern.</p>
 		</div>
 		<div class="benefit">
-			<h3>Semantic HTML and CSS</h3>
-			<p>MaintainableCSS embraces semantic HTML and CSS, so you get all the benefits too.</p>
+			<h3>Semantisches HTML und CSS</h3>
+			<p>MaintainableCSS fördert semantisch korrektes HTML und CSS.</p>
 		</div>
 		<div class="benefit">
 			<h3>High performance CSS</h3>
-			<p>Flat and performant selectors by convention.</p>
+			<p>Flache und performante Selektoren durch Konvention.</p>
 		</div>
 		<div class="benefit">
-			<h3>Find redundant code easily</h3>
-			<p>It's easy to spot redundant code. Find it. Delete it.</p>
+			<h3>Finde schnell redundanten Code</h3>
+			<p>Jetzt kannst du einfacher redunanten Code finden. Und direkt löschen.</p>
 		</div>
 		<div class="benefit">
-			<h3>AB testing and easy upgrading</h3>
-			<p>Want to test module variants against each other? MaintainableCSS makes this easy.</p>
+			<h3>AB-Testing und einfaches upgraden</h3>
+			<p>Möchtest du Modulvarianten gegeneinander testen? MaintainableCSS erleichtert dir das Vorgehen.</p>
 		</div>
-		<a class="benefit-readNowButton" href="/chapters/introduction">Read now</a>
+		<a class="benefit-readNowButton" href="/chapters/introduction">Jetzt lesen</a>
 	</div>
 </div>
 <div class="recommendations">
-	<h2 class="recommendations-title">What others say</h2>
+	<h2 class="recommendations-title">Was andere sagen</h2>
 	<div class="recommendations-item">
 		<blockquote>
 			<p>&ldquo;A handy little read on learning how to write modular and maintainable CSS.&rdquo;
@@ -114,7 +114,7 @@ id: home
 
 <!-- <div class="gotQuestion">
 	<div class="gotQuestion-inner">
-		<h2>Got a question, issue or suggestion?</h2>
-		<p>Just <a href="http://github.com/adamsilver/maintainablecss.com/issues/new/">raise an issue for discussion</a> on Github.</p>
+		<h2>Hast du eine Frage, Thema oder Anregung?</h2>
+		<p>Erstelle einfach ein neues<a href="http://github.com/adamsilver/maintainablecss.com/issues/new/">Issue auf Github</a>.</p>
 	</div>
 </div> -->
