@@ -1,37 +1,37 @@
 ---
 layout: chapter
-title: Introduction
+title: Einleitung
 section: Preface
 permalink: /chapters/introduction/
-description: An introduction to MaintainableCSS, an approach to writing modular, scalable and of course maintainable CSS.
+description: Eine Einleitung für MaintainableCSS – ein Ansatz um modulares, skalierbares und wartbares CSS zu schreiben.
 ---
 
-*MaintainableCSS* is an approach to architecting and writing CSS that helps you and your team write modular, scalable and maintainable code.
+*MaintainableCSS* ist ein Ansatz um CSS auf eine neue Art zu konzipieren. Es wird dir und deinem Team helfen einen modularen, skalierbaren und wartbaren CSS-Code zu schreiben.
 
-In practical terms, this means that as a developer I want to create new features, or edit existing features without having to concern myself with overriding styles I don't want applied, or worse that the code I write causes regression elsewhere.
+Aus praktischer Sicht bedeutet das, dass man als Entwickler neue Features erstellen oder Bestehende verändern möchte, ohne sich darum zu kümmern, ob die neuen Styles von bestehenden Styles überschrieben werden oder schlimmer, dass der neue Code an einer anderen Stelle eine Regression auslöst.
 
-## There is nothing to download
+## Hier gibt es nichts zum downloaden
 
-*MaintainableCSS* is not something you can download. It's a set of principles, guides and conventions that help you write CSS for large or small scale websites.
+*MaintainableCSS* kann man nicht herunterladen. Es ist eine Sammlung von Grundsätzen, Anleitungen und Konventionen, die dir helfen sollen CSS für große und kleine Websites zu schreiben.
 
-## What does maintainable even mean?
+## Was bedeutet Wartbarkeit?
 
-Having maintainable code means that I can edit a module and it's styles without worrying that I have negatively caused problems in other modules by accident. I want to be able to write code that provides peace of mind knowing that my code is encapsulated.
+Wartbaren Code zu haben, bedeutet dass man ein Modul ändern kann, ohne sich zu sorgen, dass die Änderung ausversehen eine negative Auswirkung auf ein anderes Modul hat. Dadurch kann man beruhigt Code schreiben, da man weiß, dass er gekapselt ist.
 
-## What does scalable even mean?
+## Was bedeutet Skalierbarkeit?
 
-This means, that as the CSS codebase increases in size, that maintaining code (see previous point) isn't any harder. If you have ever inherited a large CSS codebase, and been worried about editing existing styles, you can sympathise with this.
+Das bedeutet, selbst wenn die CSS-Codebasis in der Größe anwächst, die Wartung vom Code nicht schwieriger wird. Wenn du jemals eine große CSS-Codebasis übernommen und dich dabei über bestehende Styles gesorgt hast, wirst du dafür viel Sympathie empfinden.
 
-## What does modular even mean?
+## Was bedeutet modular?
 
-A module is a distinct, independent unit, that can be combined with other modules to form a more complex structure. In a living room, you can consider the TV, the sofa and the wall art to be modules, all coming together to create a useable room.
+Ein Modul ist eine eindeutige, unabhängige Einheit, die mit anderen Modulen kombiniert eine komplexere Struktur formen. In einem Wohnzimmer kann man den Fernseher, das Sofa und die Bilder an der Wand als Module sehen. Alle zusammen ergeben einen nutzbaren Raum.
 
-If you take one of the units away, the rest still works just fine. I don't need the TV to be able to sit on the sofa etc. In a website, the header, footer, product list, article etc can all be considered modules.
+Wenn man nun ein Modul entfernt, funktioniert der Rest weiterhin wunderbar. Man braucht keinen Fernseher umd auf dem Sofa zu sitzen oder das Sofa um die Bilder anzuschauen. Auf einer Website sind Module beispielsweise der Header, der Footer, die Produktliste oder ein Artikel.
 
-## Who is this for?
+## Für wen eignet sich das?
 
-If you have ever experienced pain in maintaining CSS, this book can help you avoid common problems. Whether you're in a team of 1 or 100, I think you will find useful advice in this book. Even more so if your site is constantly evolving.
+Wenn du schon mal Schmerzen beim Warten von CSS empfunden hast, kann dir dieser Ansatz helfen, allgemeine Probleme beim Schreiben von CSS zu umgehen. Egal ob du alleine oder in einem Team mit 100 Entwicklern arbeitest, du wirst hier praktische Ratschläge finden. Umso mehr, wenn deine Seite sich gerade weiterentwickelt.
 
-## How hard is this to learn?
+## Wie schwer ist es das zu Lernen?
 
-I would say it's very easy to learn. You can read the entire book in under 20 minutes and apply the rules in minutes. Let me know if I am wrong though :).
+MaintenableCSS ist sehr einfach zu lernen. Du kannst die ganze Seite in weniger als 20 Minuten lesen und die Regeln im Anschluss direkt einsetzen.
