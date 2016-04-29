@@ -2,17 +2,17 @@
 layout: chapters
 id: chapters
 permalink: /chapters/
-title: "Chapters"
+title: "Kapitel"
 ---
 
-{% assign prefaceChapters = site.chapters | where:'section', 'Preface' %}
-{% assign backgroundChapters = site.chapters | where:'section', 'Background' %}
-{% assign coreChapters = site.chapters | where:'section', 'Core' %}
+{% assign prefaceChapters = site.chapters | where:'section', 'Vorwort' %}
+{% assign backgroundChapters = site.chapters | where:'section', 'Hintergrund' %}
+{% assign coreChapters = site.chapters | where:'section', 'Kern' %}
 {% assign extraChapters = site.chapters | where:'section', 'Extras' %}
 
-# Chapters
+# Kapitel
 
-## Preface
+## Vorwort
 
 <ol>
   {% for chapter in prefaceChapters %}
@@ -20,7 +20,7 @@ title: "Chapters"
   {% endfor %}
 </ol>
 
-## Background
+## Hintergrund
 
 {% assign backgroundStart = prefaceChapters.size | plus: 1 %}
 
@@ -30,7 +30,7 @@ title: "Chapters"
   {% endfor %}
 </ol>
 
-## Core
+## Kern
 
 {% assign coreStart = backgroundStart | plus: backgroundChapters.size %}
 
