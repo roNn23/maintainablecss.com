@@ -8,7 +8,7 @@ id: home
 	<img class="hero-logo" src="/assets/img/logo.png" width="250" height="250">
 
 	<h1>MaintainableCSS</h1>
-	<p>Schreibe ohne Sorge, dass bereits vorhandene CSS-Styles Probleme verursachen. <em>MaintainableCSS</em> ist ein Ansatz um <em>modularen</em>, <em>skalierbaren</em> und natürlich <em>wartbaren</em> CSS-Code zu schreiben.</p>
+	<p>Schreibe CSS ohne dich dabei zu sorgen, dass bereits vorhandene Styles Probleme verursachen. <em>MaintainableCSS</em> ist ein Ansatz um <em>modularen</em>, <em>skalierbaren</em> und natürlich <em>wartbaren</em> CSS-Code zu schreiben.</p>
 	<a class="hero-button" href="/chapters/introduction/">Jetzt lesen</a>
 </div>
 <!--
