@@ -1,110 +1,103 @@
 ---
 layout: chapter
-title: Semantics
-section: Background
-permalink: /chapters/semantics/
-description: Why naming something based on what it is, instead of how it looks or behaves is a cornerstone of writing well architected and maintainable CSS code.
+title: Semantik
+section: Hintergrund
+permalink: /kapitel/semantik/
+description: Etwas danach benennen, was es ist, anstatt wie es aussieht oder sich verhält sind die Grundzüge um gut strukturiertes und damit wartbares CSS zu schreiben.
 ---
 
-**Summary:** Name something based on what it *is*, not how it *looks* or *behaves*.
+**Zusammenfassung:** Benenne etwas auf der Basis was es *ist*, nicht wie es *aussieht* oder *sich verhält*.
 
-## The longer explanation
+## Die ausführliche Erklärung
 
-Semantic HTML isn't just about the elements we use&mdash;it's pretty obvious that you should use a `<a>` for a link, a `<table>` for tabular data and a `<p>` for a paragraph etc.
+Semantisches HTML dreht sich nicht nur um die Elemente die wir benutzen &mdash; es ist ziemlich offensichtlich, dass man ein `<a>` für einen Link, ein `<table>` for tabellarische Daten und ein `<p>` für Paragraphen verwendet.
 
-More importantly, it's about the class names (and IDs) we add, that provide *additional* hooks for CSS (and Javascript) to enhance as appropriate.
+Wesentlich wichtiger ist es, CSS-Klassenbezeichnungen (genauso wie IDs) in den richtigen Zusammenhang zu setzen um damit weitere Informationen über ein Element bereitzustellen. 
 
-It's easy to add class names without thought as to their naming but naming is very important.
+Es ist leider einfacher irgendeinen unbedachten Namen zu wählen, als einen korrekten bezeichnenden Namen. Aber die Benamung ist letztendlich sehr wichtig.
 
 > &ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&rdquo;
 <br>&mdash; <cite>Phil Karlton</cite>
 
-This is because humans are good at understanding human communication and bad at understanding abbreviated, non-semantic abstractions.
+Das liegt daran, dass Menschen gut in menschlicher Kommunikation sind und schlecht im Verstehen von abgekürzten, bedeutungsschwachen Abstraktionen.
 
-## Good and bad examples of class names
+## Gute und schlechte Beispiele von CSS-Klassennamen
 
-Try and spot the difference between non-semantic and semantic class names...
+Versuche den Unterschied zwischen nicht-semantischen und semantischen Klassennamen zu erkennen.
 
-	<!-- bad -->
+	<!-- Schlecht -->
 	<div class="red pull-left"></div>
 	<div class="grid row"></div>
 	<div class="col-xs-4"></div>
 
-It's not clear at all *what* this HTML represents. You *might* have an *idea* of what these things *look like* (on small or large screens) but that is all.
+Es ist nicht erkenntlich *was* das angegebene HTML repräsentiert. Du hast vielleicht eine *Idee* wie diese Elemente *aussehen könnten* (auf kleinen oder großen Bildschirmen), aber das ist auch schon alles.
 
-	<!-- good -->
+	<!-- Gut -->
 	<div class="header"></div>
 	<div class="basket"></div>
 	<div class="product"></div>
 	<div class="searchResults"></div>
 
-Here I know exactly what I am looking at. I know the intention of what this HTML represents. And I have no idea how it looks&mdash;that's what CSS is responsible for. Semantic class names mean something to both HTML *and* CSS (and JS).
+Bei dem Beispiel weiß man genau womit man es zu tun hat. Man erkennt den Zweck den das HTML repräsentiert. Dafür weiß man nicht wie die Elemente am Schluß aussehen&mdash;dafür ist das CSS verantwortlich. Semantische Klassennamen bedeuten etwas für HTML *und* CSS (und JS).
 
-So **why** else should we use semantic class names?
+Also, **warum** sonst sollten wir semantische Klassennamen benutzen?
 
-## Because it's easier to understand.
+## Weil es einfacher zu verstehen ist
 
-Whether you're looking at the HTML or the CSS, you know what you're affecting. With visual class names you end up having to sprinkle several class names on to each element, ending up with a vague understanding of the intention of these visual class names. This is hard to maintain.
+Ob du dir das HTML oder das CSS anschaust, du weißt welchen Teil du beeinflusst. Mit visuellen Klassennamen muss man einem Element mehrere verschiedene Klassen zuweisen, wodurch man nur ein vages Verständnis über den Zweck dieser Klassen bekommt. Das ist schwer zu warten.
 
-## Because we are building responsive websites.
+## Weil wir Websites mit Hilfe von Responsive Webdesign entwickeln
 
-Styles often need changing based on viewport size. For example, you might float elements on big screens and not on small screens. So if you have a class called `clearfix` but you don't clear on small screens, then you now have misleading code.
+Styles ändern sich oft durch verschiedene Viewport-Größen. Zum Beispiel möchte man Elemente auf großen Bildschirmen floaten, auf kleinen Bildschirmen dagegen nicht. Wenn man nun eine Klasse `clearfix` auf dem Element hat, diese aber auf kleinen Bildschirmen gar nicht zur Anwendung kommt, so hat man an der Stelle einen irreführenden Code.
 
-If you use semantic class names, then you can style them differently based on media queries making it easier to maintain.
+Wenn du dagegen semantische Klassennamen benutzt, kannst du diese mittels unterschiedlichen Media-Queries einfacher pflegen.
 
-## Because semantic class names are easier to find.
+## Weil semantische Klassennamen einfacher zu finden sind
 
-If an element has classes based on how it looks such as `.red`, `clearfix` and `.pull-left`, then these classes will be scattered all over the codebase&mdash;so if you’re trying to hunt for a particular piece of HTML, the class name is not going to help you.
+Wenn ein Element Klassen trägt die das Aussehen beschreiben, wie beispielsweise `.red`, `clearfix` and `.pull-left`, dann werden diese Klassen überall im Code verwendet. Wenn man nun allerdings auf die Jagd nach einem bestimmten HTML-Element geht, wird einem der Klassenname nicht helfen, weil dieser ja sehr oft verwendet wurde.
 
-On the other hand, if your class names are semantic, a search will find the HTML in question. Or more typically, if you're beginning your search via the HTML (think: inspecting an element) then finding unique CSS selectors based on the class name will be far easier.
+Auf der anderen Seite, wird man das entsprechende HTML mit semantischen Klassen wesentlich schneller finden. Wenn du also typischerweise eine Suche basierend auf einem HTML-Tag beginnst (was durch Inspizieren in den Webdevelopertools oft vorkommt), wird du die entsprechenden CSS-Selektoren schneller auf Grundlage des semantischen Klassennamens finden.
 
-## Because you don't want unexpected regression.
+## Weil du keine unerwartete Regression willst
 
-If you have utility non-semantic classes that describe the look then when you edit one of these classes, they will propagate to every single element with that class. Knowing CSS as you do, do you feel comfortable that the propagation didn't cause unexpected problems elsewhere?
+Angenommen du bearbeitest diese nicht-semantischen Klassen, welche auf vielen Elementen hinterlegt sind. Fühlst du dich dabei gut? Oder ist es eher so, dass du ein unschönes Gefühl in der Magengegend hast, weil du nicht weißt ob die Änderung auch an einer anderen Stelle wirkt?
 
-Semantic class names are unique, so when editing one, you *can* feel comfortable that your change only applies to the module in question as you intended, making maintainance easier.
+Durch semantische Klassennamen kannst du dir absolut sicher sein, nur an der Stelle eine Änderung einzubauen, an der du auch tatsächlich arbeitest. Dies wird durch die einmalige Verwendung dieser Klassen erreicht. Dadurch wird die Wartung an CSS wesentlich einfacher, sicherer und damit auch schneller.
 
-## Because you don't want to be afraid to update code.
+## Weil du keine Angst haben solltest Code zu ändern
 
-Directly linked with the previous point about regression, when you don't feel comfortable touching code, you end up causing problems or being afraid to touch it at all. Therefore you end up with redundant code, increasing maintainance issues.
+Wie im vorherigen Punkt bzgl. der Regression erwähnt, fühlst du dich oft nicht wohl beim Ändern von Code, da dadurch oft Probleme an anderen Stellen auftreten als an denen du aktuell arbeitest. Dadurch kann es passieren, dass du manchen Code am liebsten gar nicht anfassen magst. Deswegen wird oft redundanter Code erstellt, welche die Wartung noch schwieriger macht. Ein Teufelskreis.
 
-## Because it helps automated functional testing.
+## Weil es dir hilft automatische Tests durchzuführen
 
-Automated functional tests work by searching for particular elements, interacting with them (typing in text, clicking buttons and links etc) and verifying based on that.
+Automatische Funktionstests funktionieren auf der Grundlage, dass man bestimmte Elemente im Quellcode sucht, mit diesen interagiert (Text eintragen, Buttons drücken oder Links klicken) und anschließend das Ergebnis überprüft.
 
-If you have visual class names all over the HTML, then there is no reliable way to target particular elements and act upon them.
+Hat man nun viele visuelle Klassennamen im HTML, ist es sehr schwierig das entsprechende Element zu treffen und mit diesem zu interagieren.
 
-## Because of general maintainance concerns.
+## Aus allgemeinen Gründen der Wartbarkeit
 
-If you name something based on what it is, you won't have to touch the HTML again i.e. a heading is always a heading, no matter what it *looks* like.
+Wenn du etwas danach benennst, was es tatsächlich ist, brauchst du das HTML nie wieder anfassen. Zum Beispiel bleibt eine Überschrift immer eine Überschrift, egal wie sie *aussieht*.
 
-The styling might change but you only have to update the CSS. This is otherwise known as Loose Coupling and this improves maintainability.
+Die Optik kann sich ändern, aber dann brauchst du nur das CSS anzupassen. Das ist auch bekannt als *Loose Coupling* und verbessert die Wartbarkeit deines Codes.
 
-## Because utility classes increase noise when debugging.
+## Weil Hilfsklassen stören, wenn man debuggen möchte
 
-When debugging an element, there will be several applicable CSS selectors making it noisey to debug.
+Wenn du ein Element debuggen möchtest, stört es, wenn zu viele CSS-Selektoren auf dem Element wirken.
 
-## Because the standards recommend it.
+## Weil es vom Standard empfohlen wird
 
-On using the class attribute, HTML5 specs say in 3.2.3.7:
+Die HTML5-Spezifikation erklärt zum Gebrauch der Klassenattribute (3.2.3.7):
 
 > "[...] authors are encouraged to use values that describe the nature of the content, rather than values that describe the desired presentation of the content."
 
-## Because you get a performance bump.
+## Weil es die Performance steigert
 
-This is a *very* small benefit but when you have one class name per element, you end up with smaller HTML. With visual classes you end up with multiple class names per element and that can add up.
+Das ist nur ein *kleiner* Vorteil, aber wenn man nur eine Klasse pro Element vergibt, resultiert das in einem kleineren HTML. Mit visuellen Klassen wird das Markup mit unnötigen Bytes vergrößert.
 
-## Because it adheres to the reuse rule.
+## Weil es die Reuse-Regel beachtet
 
-If you don't use semantic class names, then you will likely be breaking the rules of reuse. Read the next chapter to find out more.
+Wenn du keine semantischen Klassennamen benutzt, brichst du die Reuse-Regel. Dazu kommen wir gleich im nächsten Kapitel.
 
-<!--## Why? Because visual class names might declare the same property!
+## Schlussgedanken zur Semantik
 
-It's likely that several different utility classes could refer to the same property meaning order matters and performance degrades.
-
-Think of an example of this.
--->
-
-## Final thoughts about semantics
-
-Semantic class names are a corner stone of *MaintainableCSS*. Without this, everything else makes little sense. So name something based on what it is and everything else follows.
+Semantische Klassennamen sind der Grundstein von *MaintainableCSS*. Ohne diesen macht alles andere wenig Sinn. Also denke immer daran die Element danach zu benennen, was sind sind, nicht wie sie aussehen. Alles andere kommt dann von ganz allein.
