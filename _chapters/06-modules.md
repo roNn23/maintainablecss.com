@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: Modules
-section: Core
-permalink: /chapters/modules/
+title: Module
+section: Kern
+permalink: /kapitel/module/
 description: Learn the differences between modules and components and how to identify them within a design. We'll also code up some example modules together.
 ---
 

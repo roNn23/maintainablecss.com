@@ -94,9 +94,9 @@ Die HTML5-Spezifikation erklärt zum Gebrauch der Klassenattribute (3.2.3.7):
 
 Das ist nur ein *kleiner* Vorteil, aber wenn man nur eine Klasse pro Element vergibt, resultiert das in einem kleineren HTML. Mit visuellen Klassen wird das Markup mit unnötigen Bytes vergrößert.
 
-## Weil es die Reuse-Regel beachtet
+## Weil es Code wiederverwendbar macht
 
-Wenn du keine semantischen Klassennamen benutzt, brichst du die Reuse-Regel. Dazu kommen wir gleich im nächsten Kapitel.
+Wenn du keine semantischen Klassennamen benutzt, kannst du den Code nicht wiederverwenden. Dazu kommen wir gleich im nächsten Kapitel.
 
 ## Schlussgedanken zur Semantik
 

@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: Reuse
-section: Background
-permalink: /chapters/reuse/
+title: Wiederverwendbarkeit
+section: Hintergrund
+permalink: /kapitel/wiederverwendbarkeit/
 description: Learn why avoding reuse and embracing repetition makes CSS maintenance easier.
 ---
 
@@ -76,7 +76,7 @@ Bloat makes it harder to maintain and degrades performance (albeit in a minor wa
 
 ## Because reuse breaks semantics.
 
-If you strive to reuse the bits inbetween the curly braces to create "atomic" class names, then you encounter all the problems stated in the chapter about [Semantics](/chapters/semantics/). Read that chapter now, if you haven't already.
+If you strive to reuse the bits inbetween the curly braces to create "atomic" class names, then you encounter all the problems stated in the chapter about [Semantics](/kapitel/semantik/). Read that chapter now, if you haven't already.
 
 ## What if I really want to reuse a style?
 

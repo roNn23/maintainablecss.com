@@ -1,7 +1,7 @@
 ---
 layout: chapters
 id: chapters
-permalink: /chapters/
+permalink: /kapitel/
 title: "Kapitel"
 ---
 

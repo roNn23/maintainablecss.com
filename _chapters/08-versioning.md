@@ -1,8 +1,8 @@
 ---
 layout: chapter
-title: Versioning
+title: Versionierung
 section: Extras
-permalink: /chapters/versioning/
+permalink: /kapitel/versionierung/
 description: Learn how MaintainableCSS makes it really easy to upgrade and AB test modules for rapidly evolving websites.
 ---
 

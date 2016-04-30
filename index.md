@@ -9,7 +9,7 @@ id: home
 
 	<h1>MaintainableCSS</h1>
 	<p>Schreibe CSS ohne dich dabei zu sorgen, dass bereits vorhandene Styles Probleme verursachen. <em>MaintainableCSS</em> ist ein Ansatz um <em>modularen</em>, <em>skalierbaren</em> und natürlich <em>wartbaren</em> CSS-Code zu schreiben.</p>
-	<a class="hero-button" href="/chapters/introduction/">Jetzt lesen</a>
+	<a class="hero-button" href="/kapitel/einleitung/">Jetzt lesen</a>
 </div>
 <!--
 	<h2>Wartung &mdash; Adjektiv</h2>
@@ -75,7 +75,7 @@ id: home
 			<h3>AB-Testing und einfaches upgraden</h3>
 			<p>Möchtest du Modulvarianten gegeneinander testen? MaintainableCSS erleichtert dir das Vorgehen.</p>
 		</div>
-		<a class="benefit-readNowButton" href="/chapters/introduction">Jetzt lesen</a>
+		<a class="benefit-readNowButton" href="/kapitel/einleitung">Jetzt lesen</a>
 	</div>
 </div>
 <div class="recommendations">

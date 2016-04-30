@@ -1,8 +1,8 @@
 ---
 layout: chapter
 title: Einleitung
-section: Preface
-permalink: /chapters/introduction/
+section: Vorwort
+permalink: /kapitel/einleitung/
 description: Eine Einleitung für MaintainableCSS – ein Ansatz um modulares, skalierbares und wartbares CSS zu schreiben.
 ---
 

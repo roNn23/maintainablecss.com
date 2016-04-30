@@ -1,8 +1,8 @@
 ---
 layout: chapter
 title: IDs
-section: Background
-permalink: /chapters/ids/
+section: Hintergrund
+permalink: /kapitel/ids/
 description: Learn why using IDs as hooks for styling are problematic and what you should do instead.
 ---
 
